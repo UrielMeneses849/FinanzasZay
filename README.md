@@ -51,3 +51,7 @@ La proyección excluye ingresos hipotéticos de inventario no vendido. Las regla
 ## Validación y límites
 
 Ver `design-qa.md` y `docs/verification.md`. El proyecto incluye un modo de ejemplo separado del espacio real. La validación en escritorio y viewport 390 × 844 no reemplaza una prueba física final de cámara, almacenamiento e instalación en el iPhone 13.
+
+## Aplicación publicada
+
+[Abre Zay](https://urielmeneses849.github.io/FinanzasZay/). Solo las cuentas autorizadas `zayris` y `uriel` pueden acceder al patrimonio compartido. Las contraseñas se entregan por separado y no están en este repositorio.

@@ -33,11 +33,18 @@ final result: passed
 - Foto de galería, compresión JPEG y compra de producto dentro de un plan comprobados.
 - Recarga conserva el estado. Se verificó arranque, guardado y segunda recarga con servidor apagado (service worker).
 - Sin errores de consola de la implementación; durante HMR se detectó una advertencia por recreación del cliente auth y se añadió singleton de desarrollo y clave de sesión específica de Zay.
-- 10 pruebas de cálculo/PostgreSQL embebido, TypeScript, integridad del simulador y pruebas Sites.
+- 12 pruebas de cálculo/PostgreSQL embebido y acceso privado, TypeScript, integridad del simulador y pruebas Sites.
 
 ## Diferencias aceptadas / P3
 
 - La cabecera incluye aviso de datos ficticios y estado de guardado, necesarios en la aplicación real.
 - Fotografía nueva inspirada en el concepto e iconos equivalentes de Phosphor.
 - El porcentaje y los importes muestran precisión adicional.
-- Cámara e instalación en iPhone físico, login final y sincronización de dos equipos siguen pendientes de validación con la cuenta de la usuaria; no se consideran validados por una captura de escritorio.
+- Cámara e instalación en iPhone físico siguen pendientes de validación en ese dispositivo; no se consideran validadas por una captura de escritorio.
+
+## Acceso privado y publicación
+
+- PWA publicada en https://urielmeneses849.github.io/FinanzasZay/ con HTTPS, rama `gh-pages`, base y manifest `/FinanzasZay/`.
+- Inicio de sesión de Zayris verificado en la URL pública; llega al registro del capital inicial, sin crear saldo ficticio. Evidencia: `docs/screenshots/pages-primer-inicio.jpg`.
+- Ambos usuarios autenticados y escritura/lectura del mismo patrimonio comprobadas contra Supabase; acceso anónimo denegado. La prueba temporal se retiró.
+- Producción sin registro público ni modo demo; autorización mediante claims administrados y RLS.
